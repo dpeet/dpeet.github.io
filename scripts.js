@@ -7,6 +7,6 @@ function submitForm() {
     frm.submit(); // Submit the form
     frm.reset();  // Reset all form data
     console.log("form submitted")
-    document.getElementsByClassName("confirmation")[0].style.display="inherit" = "inherit"
+    document.getElementsByClassName("confirmation")[0].style.display="inherit"
     return false; // Prevent page refresh
  }
