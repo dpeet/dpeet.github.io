@@ -4,9 +4,9 @@ function submitForm() {
     // but duplicate names are possible in HTML
     // Therefore to work around the issue, enforce the correct index
     let frm = document.getElementById('MCForm');
-    frm.submit(); // Submit the form
+    // frm.submit(); // Submit the form
     frm.reset();  // Reset all form data
     console.log("form submitted")
     document.getElementsByClassName("confirmation")[0].style.display="inherit"
-    return false; // Prevent page refresh
+    return true; // Prevent page refresh
  }
