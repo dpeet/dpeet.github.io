@@ -3,6 +3,8 @@ function submitForm(formContext) {
     // Usually the form name is not repeated
     // but duplicate names are possible in HTML
     // Therefore to work around the issue, enforce the correct index
+    console.log("submit")
+    return true; 
     console.log(formContext)
     // let frm = document.getElementById('MCForm');
     formContext.submit(); // Submit the form
