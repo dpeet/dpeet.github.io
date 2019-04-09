@@ -1,43 +1,141 @@
-body{
-    display:flex;
-    margin:0
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    display: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.half_div{
-    height:100vh; 
-    width:50vw
+/* Site CSS Begins */
+
+body {
+    display: flex;
+    margin: 0;
 }
 
-.beer_pic{
-    height:100vh; 
-    width:50vw; 
-    background-image:url(https://raw.githubusercontent.com/dpeet/dpeet.github.io/master/img/beer_foam.jpeg); 
-    background-position: center center; 
-    background-repeat: no-repeat; 
+.half_div_left {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.half_div_right{
+    height: 100vh;
+    width: 50vw;
+}
+
+.beer_pic {
+    height: 100vh;
+    width: 50vw;
+    background-image: url(https://raw.githubusercontent.com/dpeet/dpeet.github.io/master/img/beer_foam.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover
 }
 
-.content__button{
- display:inline-block;
- padding:0.3em 1.2em;
- margin:0 0.1em 0.1em 0;
- border:0.16em solid rgba(255,255,255,0);
- border-radius:2em;
- box-sizing: border-box;
- text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
- color:#FFFFFF;
- text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
- text-align:center;
- transition: all 0.2s;
+h1{
+    color: #333333;
+    font-family: dtvx;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    word-break: break-word;
+    padding-bottom: .25em;
 }
-.content__button:hover{
- border-color: rgba(255,255,255,1);
+
+p{
+    font-family: Playfair Display;
+    text-align: center;
+    font-size: 1em;
+    word-break: break-word;
+    line-height: 150%;
+    color: #686868;
+    padding-bottom: 2em;
 }
-@media all and (max-width:30em){
- .content__button{
-  display:block;
-  margin:0.2em auto;
- }
+
+
+.button {
+    padding: 0.3em 1.2em;
+    margin: .5em 0.1em 0.1em 0;
+    border: 0.16em solid rgb(0, 0, 0);
+    border-radius: .25em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: dtvx, sans-serif;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-shadow: 0 0.02em 0.02em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px rgba(134, 134, 134, 0.5);
+}
+
+.email_label{
+    font-family: dtvx, sans-serif;
+    font-size: 1em; 
+}
+
+.email_input{
+    padding: 0.3em 1.2em;
+    margin: .5em 0.1em 0.1em 0;
+    border: 0.16em solid rgb(0, 0, 0);
+    border-radius: .25em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: dtvx, sans-serif;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-shadow: 0 0.02em 0.02em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
 }
