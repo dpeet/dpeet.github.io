@@ -101,6 +101,11 @@ p{
     padding-right: 2em;
 }
 
+.confirmation{
+    display: none;
+    color: green;
+}
+
 form {
     flex-direction: column;
     align-items: center;
